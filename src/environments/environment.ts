@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  baseUrl: "https://api.events.myuzinc.com/api/v1/",
   production: false
 };
 

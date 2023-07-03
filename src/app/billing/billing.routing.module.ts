@@ -4,11 +4,13 @@ import { CheckoutComponent } from "./components/checkout/checkout.component";
 import { PaymentSuccessComponent } from "./components/payment-success/payment-success.component";
 import { PaymentFailureComponent } from "./components/payment-failure/payment-failure.component";
 import { authGuard } from "../guards/auth.guard";
+import { PaymentsComponent } from "./components/payments/payments.component";
 
 const routes: Routes = [
     {path: "checkout", component: CheckoutComponent, canActivate: [authGuard]},
     {path: "payment-success", component: PaymentSuccessComponent, canActivate: [authGuard]},
     {path: "payment-failure", component: PaymentFailureComponent, canActivate: [authGuard]},
+    {path: "payments", component: PaymentsComponent, canActivate: [authGuard]},
   ];
   
   @NgModule({

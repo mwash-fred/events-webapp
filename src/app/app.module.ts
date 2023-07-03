@@ -6,7 +6,6 @@ import { SharedModule } from './shared/shared.module';
 import { BillingModule } from './billing/billing.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
-import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule,
     AppRoutingModule,
     PublicModule,
     AuthModule,
